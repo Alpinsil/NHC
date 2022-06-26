@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    position: relative;
+    column-gap: 10px;
+    .logo{
+        cursor: pointer;
+        position: relative;
+        span{
+            display: flex;
+            transition:all 5s 3s;
+            position: absolute;
+            bottom: 50px;
+            right: 130px;
+        }
+        h2{
+            display: inline-block;
+        }
+        & h2:hover ~ span{
+            opacity: 1;
+        }
+    }
+}
